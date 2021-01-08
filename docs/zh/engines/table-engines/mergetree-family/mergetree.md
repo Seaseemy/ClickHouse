@@ -652,6 +652,6 @@ SETTINGS storage_policy = 'moving_from_ssd_to_hdd'
 
 数据移动不会妨碍到数据复制。也就是说，同一张表的不同副本可以指定不同的存储策略。
 
-在后台合并和数据变异之后，就的数据片段会在一定时间后被移除 (`old_parts_lifetime`)。在这期间，他们不能被移动到其他的卷或磁盘。也就是说，直到数据片段被完全移除，它们仍然会被磁盘占用空间计算在内。
+在后台合并和数据变异之后，旧的数据片段会在一定时间后被移除 (`old_parts_lifetime`)。在这期间，他们不能被移动到其他的卷或磁盘。也就是说，直到数据片段被完全移除，它们仍然会被磁盘占用空间计算在内。
 
 [原始文章](https://clickhouse.tech/docs/en/operations/table_engines/mergetree/) <!--hide-->
